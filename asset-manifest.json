@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/cs3-ret-graffiti/static/css/main.ed755b1a.css",
+    "main.js": "/cs3-ret-graffiti/static/js/main.18b73dce.js",
+    "static/js/ort-wasm-simd.wasm": "/cs3-ret-graffiti/static/js/ort-wasm-simd.wasm",
+    "static/js/ort-wasm-simd-threaded.wasm": "/cs3-ret-graffiti/static/js/ort-wasm-simd-threaded.wasm",
+    "static/js/ort-wasm.wasm": "/cs3-ret-graffiti/static/js/ort-wasm.wasm",
+    "static/js/ort-wasm-threaded.wasm": "/cs3-ret-graffiti/static/js/ort-wasm-threaded.wasm",
+    "index.html": "/cs3-ret-graffiti/index.html",
+    "main.ed755b1a.css.map": "/cs3-ret-graffiti/static/css/main.ed755b1a.css.map",
+    "main.18b73dce.js.map": "/cs3-ret-graffiti/static/js/main.18b73dce.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ed755b1a.css",
+    "static/js/main.18b73dce.js"
+  ]
+}
