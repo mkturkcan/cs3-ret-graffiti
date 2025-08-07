@@ -5,10 +5,15 @@ import { renderBoxes } from "./renderBox";
 // Class names for YOLO model - update this based on your model's classes
 // This is an example for COCO dataset, replace with your actual class names
 const CLASS_NAMES = [
-  "Oyster",
-  "Algae",
-  "Tunicate",
-  "Hands"
+  "Art",
+  "Blockbuster",
+  "Graffiti",
+  "Stencil",
+  "Tag",
+  "Throw-up",
+  "Masterpiece",
+  "Sticker",
+  "Poster"
 ];
 
 // If your model is for oysters specifically, you might have something like:
@@ -32,7 +37,7 @@ export const detectImage = async (
   topk,
   iouThreshold,
   scoreThreshold,
-  inputShape
+  inputShape, mode
 ) => {
   const [modelWidth, modelHeight] = inputShape.slice(2);
   const [input, xRatio, yRatio] = preprocessing(image, modelWidth, modelHeight);
@@ -86,7 +91,7 @@ export const detectImage = async (
     });
   }
 
-  renderBoxes(canvas, boxes); // Draw boxes
+  renderBoxes(canvas, boxes, mode); // Draw boxes
   input.delete(); // delete unused Mat
   
   // Return detections array for counting

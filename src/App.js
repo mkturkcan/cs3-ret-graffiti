@@ -44,6 +44,7 @@ const App = () => {
   const detectWithCounts = useCallback(async (imageSrc, canvas, session, topk, iouThreshold, scoreThreshold, modelInputShape) => {
     try {
       // Call the original detectImage function (now returns detections)
+      var mode = 0;
       const detections = await detectImage(
         imageSrc,
         canvas,
@@ -51,7 +52,7 @@ const App = () => {
         topk,
         iouThreshold,
         scoreThreshold,
-        modelInputShape
+        modelInputShape, mode
       );
       
       // Process detection data for counting
@@ -430,7 +431,9 @@ const App = () => {
             </div>
           </div>
         )}
-        
+        </div>
+
+      <div className="content">
         <img
           ref={imageRef}
           src="#"
